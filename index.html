@@ -57,6 +57,16 @@
     .industry-card:hover .industry-card__tag,.industry-card:focus-visible .industry-card__tag{color:var(--accent-color,#8ba6ff)}
     @media(hover:none){.industry-card:active{transform:scale(.985)}}
     @media(prefers-reduced-motion:reduce){.industry-card,.industry-card__image svg,.industry-card__image svg>*,.industry-card__tag{transition:none!important;animation:none!important}.industry-card:hover,.industry-card:focus-visible,.industry-card.is-active{transform:none}.industry-card:hover .industry-card__image svg,.industry-card:focus-visible .industry-card__image svg,.industry-card.is-active .industry-card__image svg{transform:none}}
+
+    /* Same hover treatment used by professional experience entries */
+    .industry-card:hover,.industry-card:focus-visible{
+      background-color:var(--color-pill-bg);
+      border-color:var(--color-accent);
+      transform:translateX(6px);
+      box-shadow:0 4px 16px rgba(0,0,0,.045);
+    }
+    .industry-card:focus-visible{outline:2px solid var(--color-accent);outline-offset:3px}
+    @media(prefers-reduced-motion:reduce){.industry-card:hover,.industry-card:focus-visible{transform:none}}
     @media(max-width:650px){.industry-grid{grid-template-columns:1fr}}
   </style>
 </head>
