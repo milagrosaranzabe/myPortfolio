@@ -39,10 +39,18 @@
    cantidad real de tarjetas (hoy 3) sin dejar huecos vacíos, y sigue
    funcionando si en el futuro se agrega o quita algún servicio. */
 .services__grid {
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 /* El proyecto destacado nunca compite en grilla con otras tarjetas:
    siempre ocupa el ancho completo del contenedor de sección, en
    cualquier breakpoint, para mantener su tratamiento visualmente
    prominente (FR-005 de 001-site-structure). */
+
+/* Servicios: tres tarjetas por fila en escritorio, adaptable en pantallas pequeñas. */
+@media (max-width: 900px) {
+  .services__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .services__grid { grid-template-columns: 1fr; }
+}
