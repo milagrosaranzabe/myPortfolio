@@ -38,6 +38,7 @@ Incluye:
 - HTML5
 - CSS3
 - JavaScript
+- TypeScript
 - Git y GitHub
 - GitHub Pages
 
@@ -49,6 +50,6 @@ Este portfolio refleja tanto mi experiencia en Manual Testing como mi proceso de
 
 ---
 
-**Milagros Aranzabe**
+**Milagros Aranzabe Alonso**
 
 [Portfolio](https://milagrosaranzabe.github.io/myPortfolio/) | [GitHub](https://github.com/milagrosaranzabe)
