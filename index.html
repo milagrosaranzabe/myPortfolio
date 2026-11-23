@@ -601,7 +601,27 @@
                   <p class="bug-report__field" data-lang="en"><strong>Evidence:</strong> reproduction steps, failed-assertion screenshots, and an execution video.</p>
                   <div class="project-card__actions">
                     <a class="button button--ghost" href="https://github.com/milagrosaranzabe/moviesLibrary/blob/main/docs/bug-reports.md" target="_blank" rel="noopener"><span data-lang="es">Ver Bug Report</span><span data-lang="en">View Bug Report</span></a>
-                    <a class="button button--ghost" href="https://github.com/milagrosaranzabe/moviesLibrary/tree/main/docs/evidence/SIM-BUG-001" target="_blank" rel="noopener"><span data-lang="es">Ver capturas y video</span><span data-lang="en">View screenshots and video</span></a>
+                  </div>
+                  <div class="bug-report__field" style="margin-top:1rem">
+                    <p data-lang="es"><strong>Capturas de la ejecución</strong></p>
+                    <p data-lang="en"><strong>Execution screenshots</strong></p>
+                    <figure style="margin:0 0 1rem">
+                      <img src="https://raw.githubusercontent.com/milagrosaranzabe/moviesLibrary/main/docs/evidence/SIM-BUG-001/cypress-failed-assertion.png" alt="Cypress: AssertionError en SIM-BUG-001" loading="lazy" style="display:block;width:100%;height:auto;border-radius:.5rem">
+                      <figcaption data-lang="es">Assertion fallida de Cypress</figcaption>
+                      <figcaption data-lang="en">Failed Cypress assertion</figcaption>
+                    </figure>
+                    <figure style="margin:0 0 1rem">
+                      <img src="https://raw.githubusercontent.com/milagrosaranzabe/moviesLibrary/main/docs/evidence/SIM-BUG-001/favorite-card-remains.png" alt="La tarjeta de la película permanece visible en Favoritos" loading="lazy" style="display:block;width:100%;height:auto;border-radius:.5rem">
+                      <figcaption data-lang="es">Tarjeta que permanece visible después de eliminar el favorito</figcaption>
+                      <figcaption data-lang="en">Card remaining visible after removing the favorite</figcaption>
+                    </figure>
+                    <p data-lang="es"><strong>Video de ejecución</strong></p>
+                    <p data-lang="en"><strong>Execution video</strong></p>
+                    <video controls preload="metadata" playsinline style="display:block;width:100%;height:auto;border-radius:.5rem" aria-label="Video de ejecución fallida de Cypress SIM-BUG-001">
+                      <source src="https://raw.githubusercontent.com/milagrosaranzabe/moviesLibrary/main/docs/evidence/SIM-BUG-001/failed-execution.mp4" type="video/mp4">
+                      <span data-lang="es">Tu navegador no admite la reproducción de este video.</span>
+                      <span data-lang="en">Your browser does not support video playback.</span>
+                    </video>
                   </div>
                 </div>
               </details>
