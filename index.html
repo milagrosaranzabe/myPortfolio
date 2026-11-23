@@ -646,8 +646,8 @@
                 <div class="bug-report">
                   <p data-lang="es">Práctica de automatización de flujos básicos: Login y Favoritos. Uso <strong>Page Object Model (POM)</strong> para separar selectores y acciones de los escenarios de prueba, facilitando la lectura y el mantenimiento.</p>
                   <p data-lang="en">Basic E2E automation practice covering Login and Favorites. <strong>Page Object Model (POM)</strong> separates selectors and page actions from test scenarios for readability and easier maintenance.</p>
-                  <p class="bug-report__field" data-lang="es"><strong>Test Cases trabajados:</strong> Login with valid credentials; Add and remove a movie in Favorites; Remove a movie from Favorites (SIM-BUG-001, ejecución fallida documentada).</p>
-                  <p class="bug-report__field" data-lang="en"><strong>Test Cases practiced:</strong> Login with valid credentials; Add and remove a movie in Favorites; Remove a movie from Favorites (SIM-BUG-001, documented failed execution).</p>
+                  <p class="bug-report__field" data-lang="es"><strong>Test Cases trabajados:</strong> Login with valid credentials; Add and remove a movie in Favorites; Verify a favorite movie persists after reloading Favorites (escenario distinto del bug simulado SIM-BUG-001).</p>
+                  <p class="bug-report__field" data-lang="en"><strong>Test Cases practiced:</strong> Login with valid credentials; Add and remove a movie in Favorites; Verify a favorite movie persists after reloading Favorites (separate from simulated bug SIM-BUG-001).</p>
                   <p class="bug-report__field"><strong>Stack:</strong> Cypress · TypeScript · JavaScript · Firebase</p>
                   <pre style="overflow-x:auto;white-space:pre;font-size:.83rem;line-height:1.55;padding:1rem;border:1px solid rgba(155,130,255,.32);border-radius:.6rem;"><code>cypress/
 ├── e2e/
@@ -657,8 +657,8 @@
     ├── login.page.ts
     ├── home.page.ts
     └── favorites.page.ts</code></pre>
-                  <p class="bug-report__field" data-lang="es">Esta estructura representa el trabajo local con POM. Los archivos de Cypress todavía no están publicados en el repositorio enlazado; por ahora allí pueden consultarse la aplicación y las evidencias del bug.</p>
-                  <p class="bug-report__field" data-lang="en">This structure reflects the local POM work. Cypress source files are not yet published in the linked repository; the application and bug evidence are available there.</p>
+                  <p class="bug-report__field" data-lang="es">Los archivos E2E, Page Objects y configuración Cypress están publicados en el repositorio enlazado, actualmente privado. Los resultados históricos no corresponden a una única ejecución de la suite.</p>
+                  <p class="bug-report__field" data-lang="en">The E2E specs, Page Objects and Cypress configuration are published in the linked repository, which is currently private. Historical results are not from one complete suite run.</p>
                   <div class="project-card__actions"><a class="button button--ghost" href="https://github.com/milagrosaranzabe/moviesLibrary" target="_blank" rel="noopener"><span data-lang="es">Ver repositorio</span><span data-lang="en">View repository</span></a></div>
                 </div>
               </details>
