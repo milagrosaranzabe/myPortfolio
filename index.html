@@ -555,8 +555,8 @@
                 <span class="project-card__status project-card__status--live"><span data-lang="es">En vivo</span><span data-lang="en">Live</span></span>
               </div>
 
-              <p data-lang="es">Buscá películas y series, guardalas como favoritas y gestioná tu cuenta. La construí como proyecto independiente para practicar QA sobre una aplicación funcional con autenticación, datos persistentes y una API externa. Ya desarrollé pruebas automatizadas E2E con Cypress y POM; estoy preparando las evidencias y los reportes.</p>
-              <p data-lang="en">Search movies and shows, save favorites, manage your account. Built as an independent QA practice project using a functional app with authentication, persistent data, and an external API. I have developed E2E automated tests with Cypress and POM; evidence and reports are being prepared.</p>
+              <p data-lang="es">Buscá películas y series, guardalas como favoritas y gestioná tu cuenta. La construí como proyecto independiente para practicar QA sobre una aplicación funcional con autenticación, datos persistentes y una API externa. Estoy practicando pruebas automatizadas E2E con Cypress y POM; ya documenté un bug simulado con capturas, video y reporte.</p>
+              <p data-lang="en">Search movies and shows, save favorites, manage your account. Built as an independent QA practice project using a functional app with authentication, persistent data, and an external API. I am practicing E2E automated tests with Cypress and POM; a simulated bug is documented with screenshots, video, and a report.</p>
 
               <ul class="featured-project__features">
                 <li><span data-lang="es">Login</span><span data-lang="en">Login</span></li>
@@ -574,86 +574,58 @@
                 </a>
               </div>
 
-              <!-- Bug real, encontrado por testing manual funcional sobre la app en producción. -->
+              <!-- Evidencia de defecto simulado documentado durante prácticas E2E. -->
               <details class="project-card__evidence">
-                <summary><span data-lang="es">Ver evidencia QA: bug real encontrado y corregido</span><span data-lang="en">See QA evidence: real bug found and fixed</span></summary>
-
-            <div class="bug-report">
-              <p>
-                <strong><span data-lang="es">[FE][Header] El header ocupa ~22% del viewport en mobile y queda fijo durante el scroll</span><span data-lang="en">[FE][Header] The header takes up ~22% of the mobile viewport and stays fixed while scrolling</span></strong>
-                <span class="bug-report__severity"><span data-lang="es">Media</span><span data-lang="en">Medium</span></span>
-              </p>
-
-              <p class="bug-report__field" data-lang="es"><strong>Descripción:</strong> por debajo de 480px de ancho, el header se apila en varias filas (marca, menú de navegación, selector de tema) y al ser <code>position: sticky</code>, ese bloque apilado queda fijo en pantalla durante todo el scroll.</p>
-              <p class="bug-report__field" data-lang="en"><strong>Description:</strong> below 480px wide, the header stacks into several rows (brand, nav menu, theme switch) and, being <code>position: sticky</code>, that stacked block stays pinned to the screen through the whole scroll.</p>
-
-              <p class="bug-report__field" data-lang="es"><strong>Plataforma:</strong> Web — mobile, modo responsive del navegador (375×812 px, preset iPhone 12 mini).</p>
-              <p class="bug-report__field" data-lang="en"><strong>Platform:</strong> Web — mobile, browser responsive mode (375×812 px, iPhone 12 mini preset).</p>
-              <p class="bug-report__field"><strong><span data-lang="es">Versión de la app</span><span data-lang="en">App version</span>:</strong> 1.0</p>
-
-              <p class="bug-report__field" data-lang="es"><strong>Pasos para reproducirlo:</strong></p>
-              <p class="bug-report__field" data-lang="en"><strong>Steps to reproduce:</strong></p>
-              <ol data-lang="es">
-                <li>Abrir el sitio (biblioteca-peliculas-series.web.app) con sesión iniciada, en modo responsive a 375px de ancho.</li>
-                <li>Observar la altura del header al cargar la página.</li>
-                <li>Hacer scroll hacia abajo en la grilla de resultados.</li>
-              </ol>
-              <ol data-lang="en">
-                <li>Open the site (biblioteca-peliculas-series.web.app) while logged in, in responsive mode at 375px wide.</li>
-                <li>Observe the header's height on load.</li>
-                <li>Scroll down through the results grid.</li>
-              </ol>
-
-              <div class="bug-report__result">
-                <div>
-                  <h4><span data-lang="es">Resultado esperado</span><span data-lang="en">Expected result</span></h4>
-                  <p data-lang="es">El header no debería ocupar más de una porción razonable de la pantalla al hacer scroll, dejando la mayor parte del viewport disponible para el contenido.</p>
-                  <p data-lang="en">The header shouldn't take up more than a reasonable portion of the screen while scrolling, leaving most of the viewport available for content.</p>
-                </div>
-                <div>
-                  <h4><span data-lang="es">Resultado obtenido</span><span data-lang="en">Actual result</span></h4>
-                  <p data-lang="es">El header apilado mide 178px de alto (21,9% de un viewport de 812px) y permanece fijo durante todo el scroll, tapando de forma permanente casi un cuarto de la pantalla.</p>
-                  <p data-lang="en">The stacked header measures 178px tall (21.9% of an 812px viewport) and stays fixed through the whole scroll, permanently covering nearly a quarter of the screen.</p>
-                </div>
-              </div>
-
-              <div class="bug-report__field">
-                <p data-lang="es"><strong>Evidencia:</strong></p>
-                <p data-lang="en"><strong>Evidence:</strong></p>
-                <div class="bug-report__evidence-row">
-                  <div class="screenshots">
-                    <img src="assets/img/proyecto-destacado/bug-header-mobile-antes.png" alt="Header apilado en 3 filas, ocupando ~22% del viewport en mobile" width="375" height="812" loading="lazy">
+                <summary><span data-lang="es">Ver evidencia QA: bug simulado SIM-BUG-001</span><span data-lang="en">See QA evidence: simulated bug SIM-BUG-001</span></summary>
+                <div class="bug-report">
+                  <p><strong>SIM-BUG-001 — <span data-lang="es">La tarjeta permanece después de eliminar una película de Favoritos</span><span data-lang="en">Movie card remains after removal from Favorites</span></strong></p>
+                  <p class="bug-report__field" data-lang="es"><strong>Contexto:</strong> defecto simulado en un entorno QA aislado para practicar automatización E2E, detección de fallos y documentación. No se confirmó el mismo defecto en la aplicación original.</p>
+                  <p class="bug-report__field" data-lang="en"><strong>Context:</strong> simulated defect in an isolated QA environment to practice E2E automation, failure detection, and bug reporting. The same defect was not confirmed in the original application.</p>
+                  <p class="bug-report__field"><strong><span data-lang="es">Estado</span><span data-lang="en">Status</span>:</strong> Open / Not verified as fixed</p>
+                  <p class="bug-report__field"><strong>Stack:</strong> Cypress · TypeScript · POM · Firebase</p>
+                  <p class="bug-report__field" data-lang="es"><strong>Test Case:</strong> Remove a movie from Favorites — «Déjame salir» (movie_419430).</p>
+                  <p class="bug-report__field" data-lang="en"><strong>Test Case:</strong> Remove a movie from Favorites — “Get Out” (movie_419430).</p>
+                  <div class="bug-report__result">
+                    <div>
+                      <h4><span data-lang="es">Resultado esperado</span><span data-lang="en">Expected result</span></h4>
+                      <p data-lang="es">La tarjeta desaparece de Favoritos y no reaparece al recargar la página.</p>
+                      <p data-lang="en">The movie card disappears from Favorites and does not return after a page reload.</p>
+                    </div>
+                    <div>
+                      <h4><span data-lang="es">Resultado observado</span><span data-lang="en">Observed result</span></h4>
+                      <p data-lang="es">Durante la ejecución automatizada, Cypress sigue encontrando la tarjeta en el DOM tras hacer clic para eliminarla. La causa definitiva no se confirmó.</p>
+                      <p data-lang="en">During the automated run, Cypress still finds the card in the DOM after the removal click. The root cause remains unconfirmed.</p>
+                    </div>
                   </div>
-                  <div class="bug-report__evidence-text">
-                    <p data-lang="es">Medición vía DevTools: altura de <code>header.site-header</code> = 178,15px (21,9% del viewport), <code>position: sticky</code>.</p>
-                    <p data-lang="en">DevTools measurement: <code>header.site-header</code> height = 178.15px (21.9% of the viewport), <code>position: sticky</code>.</p>
+                  <p class="bug-report__field" data-lang="es"><strong>Evidencias:</strong> reporte con pasos de reproducción, capturas de la Assertion fallida y video de la ejecución.</p>
+                  <p class="bug-report__field" data-lang="en"><strong>Evidence:</strong> reproduction steps, failed-assertion screenshots, and an execution video.</p>
+                  <div class="project-card__actions">
+                    <a class="button button--ghost" href="https://github.com/milagrosaranzabe/moviesLibrary/blob/main/docs/bug-reports.md" target="_blank" rel="noopener"><span data-lang="es">Ver Bug Report</span><span data-lang="en">View Bug Report</span></a>
+                    <a class="button button--ghost" href="https://github.com/milagrosaranzabe/moviesLibrary/tree/main/docs/evidence/SIM-BUG-001" target="_blank" rel="noopener"><span data-lang="es">Ver capturas y video</span><span data-lang="en">View screenshots and video</span></a>
                   </div>
                 </div>
-              </div>
+              </details>
 
-              <p class="bug-report__field"><strong><span data-lang="es">Severidad</span><span data-lang="en">Severity</span>:</strong> <span data-lang="es">Media — degrada la experiencia en mobile pero no bloquea ninguna funcionalidad.</span><span data-lang="en">Medium — degrades the mobile experience but doesn't block any functionality.</span></p>
-              <p class="bug-report__field"><strong><span data-lang="es">Prioridad</span><span data-lang="en">Priority</span>:</strong> <span data-lang="es">Media.</span><span data-lang="en">Medium.</span></p>
-
-              <div class="bug-report__fix">
-                <p class="bug-report__field" data-lang="es"><strong>Solución (Desarrollo):</strong> el primer ajuste del desarrollador (ocultar el email y reacomodar una fila) reducía el problema pero no lo resolvía del todo, así que optó por un rediseño más claro: en mobile, la marca queda sola en el header y el resto (navegación, selector de idioma y de tema) se colapsa detrás de un botón de menú (☰) que se despliega al tocarlo. Agregó el botón <code>#nav-toggle</code> y un contenedor <code>#site-nav-menu</code> en las 4 páginas del sitio, con <code>display: contents</code> en desktop (no cambia nada ahí) y <code>display: none</code> / <code>.is-open</code> en mobile, más un listener en <code>nav.js</code> para alternar la clase al tocar el botón.</p>
-                <p class="bug-report__field" data-lang="en"><strong>Fix (Development):</strong> the developer's first pass (hiding the email and reflowing one row) reduced the problem but didn't fully solve it, so they went with a clearer redesign instead: on mobile, the brand now sits alone in the header and everything else (nav links, language switch, theme switch) collapses behind a menu button (☰) that expands on tap. They added a <code>#nav-toggle</code> button and a <code>#site-nav-menu</code> wrapper across the site's 4 pages, using <code>display: contents</code> on desktop (no visual change there) and <code>display: none</code> / <code>.is-open</code> on mobile, plus a listener in <code>nav.js</code> to toggle the class on tap.</p>
-
-                <p class="bug-report__field"><strong><span data-lang="es">Estado</span><span data-lang="en">Status</span>:</strong> <span data-lang="es">Completado.</span><span data-lang="en">Done.</span></p>
-
-                <p class="bug-report__field" data-lang="es"><strong>Re-test:</strong> repetí los mismos pasos sobre la versión corregida, en el mismo modo responsive (375×812).</p>
-                <p class="bug-report__field" data-lang="en"><strong>Re-test:</strong> repeated the same steps against the fixed version, in the same responsive mode (375×812).</p>
-
-                <div class="bug-report__evidence-row">
-                  <div class="screenshots">
-                    <img src="assets/img/proyecto-destacado/bug-header-mobile-despues.png" alt="Header corregido: una sola fila con la marca y un botón de menú colapsado" width="375" height="812" loading="lazy">
-                  </div>
-                  <div class="bug-report__evidence-text">
-                    <p data-lang="es">Altura de <code>header.site-header</code> = 49px (6% del viewport, antes 21,9%) con el menú colapsado por defecto. El resto de las opciones (Favoritos, email, Cerrar sesión, idioma, tema) sigue disponible al tocar el botón ☰, sin perder funcionalidad.</p>
-                    <p data-lang="en"><code>header.site-header</code> height = 49px (6% of the viewport, down from 21.9%) with the menu collapsed by default. The rest of the options (Favorites, email, sign out, language, theme) are still available by tapping the ☰ button, with no loss of functionality.</p>
-                  </div>
+              <details class="project-card__evidence">
+                <summary><span data-lang="es">Ver Test Cases E2E y estructura POM</span><span data-lang="en">View E2E Test Cases and POM structure</span></summary>
+                <div class="bug-report">
+                  <p data-lang="es">Práctica de automatización de flujos básicos: Login y Favoritos. Uso <strong>Page Object Model (POM)</strong> para separar selectores y acciones de los escenarios de prueba, facilitando la lectura y el mantenimiento.</p>
+                  <p data-lang="en">Basic E2E automation practice covering Login and Favorites. <strong>Page Object Model (POM)</strong> separates selectors and page actions from test scenarios for readability and easier maintenance.</p>
+                  <p class="bug-report__field" data-lang="es"><strong>Test Cases trabajados:</strong> Login with valid credentials; Add and remove a movie in Favorites; Remove a movie from Favorites (SIM-BUG-001, ejecución fallida documentada).</p>
+                  <p class="bug-report__field" data-lang="en"><strong>Test Cases practiced:</strong> Login with valid credentials; Add and remove a movie in Favorites; Remove a movie from Favorites (SIM-BUG-001, documented failed execution).</p>
+                  <p class="bug-report__field"><strong>Stack:</strong> Cypress · TypeScript · JavaScript · Firebase</p>
+                  <pre style="overflow-x:auto;white-space:pre;font-size:.83rem;line-height:1.55;padding:1rem;border:1px solid rgba(155,130,255,.32);border-radius:.6rem;"><code>cypress/
+├── e2e/
+│   ├── login.cy.ts
+│   └── favorites.cy.ts
+└── pages/
+    ├── login.page.ts
+    ├── home.page.ts
+    └── favorites.page.ts</code></pre>
+                  <p class="bug-report__field" data-lang="es">Esta estructura representa el trabajo local con POM. Los archivos de Cypress todavía no están publicados en el repositorio enlazado; por ahora allí pueden consultarse la aplicación y las evidencias del bug.</p>
+                  <p class="bug-report__field" data-lang="en">This structure reflects the local POM work. Cypress source files are not yet published in the linked repository; the application and bug evidence are available there.</p>
+                  <div class="project-card__actions"><a class="button button--ghost" href="https://github.com/milagrosaranzabe/moviesLibrary" target="_blank" rel="noopener"><span data-lang="es">Ver repositorio</span><span data-lang="en">View repository</span></a></div>
                 </div>
-              </div>
-            </div>
               </details>
             </div>
           </article>
