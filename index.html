@@ -555,28 +555,35 @@
                 <span class="project-card__status project-card__status--live"><span data-lang="es">En vivo</span><span data-lang="en">Live</span></span>
               </div>
 
-              <p data-lang="es">Buscá películas y series, guardalas como favoritas y gestioná tu cuenta. La construí como proyecto independiente para practicar QA sobre una aplicación funcional con autenticación, datos persistentes y una API externa. Estoy practicando pruebas automatizadas E2E con Cypress y POM; ya documenté un bug simulado con capturas, video y reporte.</p>
-              <p data-lang="en">Search movies and shows, save favorites, manage your account. Built as an independent QA practice project using a functional app with authentication, persistent data, and an external API. I am practicing E2E automated tests with Cypress and POM; a simulated bug is documented with screenshots, video, and a report.</p>
+              <p data-lang="es">Aplicación web para practicar QA Automation con Cypress y Page Object Model (POM). Incluye pruebas E2E, un bug simulado documentado y resultados de ejecución.</p>
+              <p data-lang="en">Web application for practicing QA Automation with Cypress and Page Object Model (POM). Includes E2E tests, a documented simulated bug, and execution results.</p>
 
               <ul class="featured-project__features">
-                <li><span data-lang="es">Login</span><span data-lang="en">Login</span></li>
-                <li><span data-lang="es">Búsqueda</span><span data-lang="en">Search</span></li>
-                <li><span data-lang="es">Favoritos</span><span data-lang="en">Favorites</span></li>
-                <li>Firebase</li>
+<li>Firebase</li>
                 <li>Cypress E2E</li>
+                <li>TypeScript</li>
                 <li>POM</li>
               </ul>
 
+              <div class="project-card__metrics" aria-label="Cypress test results">
+                <div><strong>15</strong><span>Tests</span></div>
+                <div><strong>15</strong><span>Passed</span></div>
+                <div><strong>4</strong><span>Specs</span></div>
+              </div>
+              <p class="project-card__note" data-lang="es">Resultados consolidados de ejecuciones exitosas por Spec.</p>
+              <p class="project-card__note" data-lang="en">Consolidated results from successful runs per Spec.</p>
               <div class="project-card__actions">
                 <a class="button" href="https://biblioteca-peliculas-series.web.app" target="_blank" rel="noopener">
                   <span data-lang="es">Ver proyecto en vivo</span>
                   <span data-lang="en">See live project</span>
                 </a>
+                <a class="button button--ghost" href="https://github.com/milagrosaranzabe/moviesLibrary" target="_blank" rel="noopener"><span data-lang="es">Ver código en GitHub</span><span data-lang="en">View GitHub repository</span></a>
               </div>
-
+            </div>
+            <div class="project-card__sections">
               <!-- Evidencia de defecto simulado documentado durante prácticas E2E. -->
               <details class="project-card__evidence">
-                <summary><span data-lang="es">Ver evidencia QA: bug simulado SIM-BUG-001</span><span data-lang="en">See QA evidence: simulated bug SIM-BUG-001</span></summary>
+                <summary><span data-lang="es">Bug Report — SIM-BUG-001</span><span data-lang="en">Bug Report — SIM-BUG-001</span></summary>
                 <div class="bug-report">
                   <p><strong>SIM-BUG-001 — <span data-lang="es">La tarjeta permanece después de eliminar una película de Favoritos</span><span data-lang="en">Movie card remains after removal from Favorites</span></strong></p>
                   <p class="bug-report__field" data-lang="es"><strong>Contexto:</strong> defecto simulado en un entorno QA aislado para practicar automatización E2E, detección de fallos y documentación. No se confirmó el mismo defecto en la aplicación original.</p>
@@ -625,7 +632,7 @@
               </details>
 
               <details class="project-card__evidence">
-                <summary><span data-lang="es">Ver Test Cases E2E y estructura POM</span><span data-lang="en">View E2E Test Cases and POM structure</span></summary>
+                <summary><span data-lang="es">Test Cases y POM</span><span data-lang="en">Test Cases and POM</span></summary>
                 <div class="bug-report">
                   <p data-lang="es">Práctica de automatización de flujos básicos: Login y Favoritos. Uso <strong>Page Object Model (POM)</strong> para separar selectores y acciones de los escenarios de prueba, facilitando la lectura y el mantenimiento.</p>
                   <p data-lang="en">Basic E2E automation practice covering Login and Favorites. <strong>Page Object Model (POM)</strong> separates selectors and page actions from test scenarios for readability and easier maintenance.</p>
