@@ -988,3 +988,55 @@
   color: var(--color-text-muted);
   margin: 0;
 }
+
+/* Proyecto QA: resumen en dos columnas y evidencias a ancho completo. */
+.project-card__sections {
+  padding: 0 var(--space-3) var(--space-3);
+  min-width: 0;
+}
+.project-card__metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .6rem;
+  margin: .5rem 0;
+}
+.project-card__metrics > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .75rem .4rem;
+  border: 1px solid var(--color-border);
+  border-radius: 9px;
+  background: var(--color-bg-alt);
+}
+.project-card__metrics strong {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: var(--color-accent-text);
+}
+.project-card__metrics span,
+.project-card__note {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+.project-card__sections .project-card__evidence summary {
+  padding: .8rem .2rem;
+}
+@media (min-width: 60rem) {
+  .projects-grid > .project-card {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    align-items: start;
+  }
+  .projects-grid > .project-card > .project-card__frame {
+    align-self: stretch;
+    height: 100%;
+  }
+  .projects-grid > .project-card > .project-card__frame .project-card__cover {
+    height: calc(100% - 2.2rem);
+    min-height: 19rem;
+  }
+  .projects-grid > .project-card > .project-card__sections {
+    grid-column: 1 / -1;
+  }
+}
