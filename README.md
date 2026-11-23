@@ -29,16 +29,18 @@ Incluye:
 - Selectores `data-testid`.
 - Validaciones funcionales mediante assertions.
 - Documentación de Test Cases y resultados.
-- Registro de defectos simulados para practicar Bug Reporting.
+- Registro de defectos simulados para practicar Bug Reporting (no equivale a un defecto confirmado en producción).
+- Evidencias de ejecución y dashboard en el [portfolio web](https://milagrosaranzabe.github.io/myPortfolio/#proyectos-destacados). Los tests Cypress/POM todavía no están publicados como código fuente en este repositorio.
 
-**[Ver aplicación](https://biblioteca-peliculas-series.web.app/)**
+**[Ver aplicación](https://biblioteca-peliculas-series.web.app/)** · **[Ver repositorio](https://github.com/milagrosaranzabe/moviesLibrary)** · **[Ver Bug Report documentado](https://github.com/milagrosaranzabe/moviesLibrary/blob/main/docs/bug-reports.md)**
 
-### Tecnologías del portfolio
+### Tecnologías del portfolio web
 
 - HTML5
 - CSS3
 - JavaScript
 - Git y GitHub
+- GitHub Pages
 
 ### Tecnologías y herramientas de QA Automation
 
