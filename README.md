@@ -38,9 +38,22 @@ Incluye:
 - HTML5
 - CSS3
 - JavaScript
-- TypeScript
 - Git y GitHub
-- GitHub Pages
+
+Tecnologías y herramientas de QA Automation
+
+- Cypress
+- JavaScript
+- TypeScript (en aprendizaje)
+- End-to-End Testing (E2E)
+- Page Object Model (POM)
+- Assertions
+- Selectores data-testid
+
+Hosting y despliegue
+
+- GitHub Pages: publicación del portfolio profesional.
+- Firebase Hosting: publicación de la Biblioteca de Películas y Series.
 
 ### Evolución profesional
 
