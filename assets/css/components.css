@@ -1094,3 +1094,55 @@
   .project-card__metrics > div,
   .project-card__status--live { animation: none; }
 }
+
+/* UI refinements: accessible focus/hover glow and scroll-active navigation. */
+.site-nav__list a::after {
+  transform-origin: center;
+  transition: transform .28s cubic-bezier(.2,.8,.2,1);
+}
+.site-nav__list a[aria-current="location"] {
+  background-color: var(--color-pill-bg);
+}
+.site-nav__list a[aria-current="location"]::after {
+  height: 3px;
+  border-radius: 99px;
+}
+@media (hover: hover) {
+  .project-card,
+  .service-card,
+  .industry-card,
+  .skill-card {
+    transition: border-color .28s ease, box-shadow .28s ease, transform .28s ease;
+  }
+  .project-card:hover,
+  .service-card:hover,
+  .industry-card:hover,
+  .skill-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 1px var(--color-accent-glow), 0 12px 28px var(--shadow-color);
+  }
+}
+.project-card:focus-within,
+.service-card:focus-within,
+.industry-card:focus-visible,
+.skill-card:focus-within {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px var(--color-accent-glow);
+}
+.button:hover,
+.button:focus-visible,
+.project-card__actions .button:hover,
+.project-card__actions .button:focus-visible {
+  box-shadow: 0 0 0 3px var(--color-accent-glow), 0 8px 20px var(--shadow-color);
+}
+/* Escalonado al entrar en pantalla: reutiliza reveal.js y su IntersectionObserver. */
+.reveal--visible .reveal-item:nth-child(2) { transition-delay: 90ms; }
+.reveal--visible .reveal-item:nth-child(3) { transition-delay: 180ms; }
+.reveal--visible .reveal-item:nth-child(4) { transition-delay: 270ms; }
+.reveal--visible .reveal-item:nth-child(5) { transition-delay: 360ms; }
+.reveal--visible .reveal-item:nth-child(n+6) { transition-delay: 400ms; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-item, .reveal--visible .reveal-item { opacity: 1; transform: none; transition: none; transition-delay: 0ms; }
+  .project-card, .service-card, .industry-card, .skill-card, .button,
+  .site-nav__list a::after { transition: none; }
+}
