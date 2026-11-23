@@ -54,3 +54,22 @@
 @media (max-width: 600px) {
   .services__grid { grid-template-columns: 1fr; }
 }
+
+/* Fondos degradados suaves y coordinados por sección, compatibles con ambos temas. */
+main > .section {
+  background-color: var(--color-bg);
+  background-image:
+    radial-gradient(ellipse at 88% 5%, var(--color-accent-glow) 0%, transparent 58%),
+    linear-gradient(145deg, var(--color-bg) 8%, var(--color-bg-alt-2) 100%);
+  background-repeat: no-repeat;
+}
+main > .section:nth-of-type(even) {
+  background-image:
+    radial-gradient(ellipse at 12% 12%, var(--color-accent-glow) 0%, transparent 60%),
+    linear-gradient(215deg, var(--color-bg) 10%, var(--color-bg-alt) 100%);
+}
+main > .section:nth-of-type(3n) {
+  background-image:
+    radial-gradient(ellipse at 75% 80%, var(--color-accent-glow) 0%, transparent 58%),
+    linear-gradient(160deg, var(--color-bg-alt-2) 0%, var(--color-bg) 90%);
+}
