@@ -1029,12 +1029,17 @@
     align-items: start;
   }
   .projects-grid > .project-card > .project-card__frame {
-    align-self: stretch;
-    height: 100%;
+    align-self: start;
+    min-width: 0;
+    overflow: hidden;
   }
   .projects-grid > .project-card > .project-card__frame .project-card__cover {
-    height: calc(100% - 2.2rem);
-    min-height: 19rem;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    object-position: center top;
   }
   .projects-grid > .project-card > .project-card__sections {
     grid-column: 1 / -1;
