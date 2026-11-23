@@ -40,7 +40,7 @@ Incluye:
 - JavaScript
 - Git y GitHub
 
-Tecnologías y herramientas de QA Automation
+### Tecnologías y herramientas de QA Automation
 
 - Cypress
 - JavaScript
@@ -50,7 +50,7 @@ Tecnologías y herramientas de QA Automation
 - Assertions
 - Selectores data-testid
 
-Hosting y despliegue
+### Hosting y despliegue
 
 - GitHub Pages: publicación del portfolio profesional.
 - Firebase Hosting: publicación de la Biblioteca de Películas y Series.
